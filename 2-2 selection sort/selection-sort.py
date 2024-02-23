@@ -20,9 +20,9 @@ def selectionSort(A):
 	for i in range(len(A)-1):
 		min_index = i
 		for j in range(i+1, len(A)):
-			if A[min_index] > A[j]:
+			if A[j] < A[min_index]:
 				min_index = j
-		(A[i], A[min_index]) = (A[min_index], A[i])
+		A[i], A[min_index] = A[min_index], A[i]
 
 A = [3,7,5,8,10,9,5,11]
 A = random.choices(range(100), k=30)

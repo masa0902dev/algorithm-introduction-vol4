@@ -6,7 +6,7 @@ A = random.choices(range(100), k=30)
 
 # 昇順
 def insertionSort(A):
-	for i in range(1, len(A)): # 1,2,...,n-1をループ。(2個目,3個目,...n個目)
+	for i in range(1, len(A)): # 1,2,...,n-1をループ(2個目,3個目,...n個目)。rangeでlen(A)-1もlen(A)も十分ある。
 		key = A[i]
 		j = i - 1
 		while j >= 0 and A[j] > key:

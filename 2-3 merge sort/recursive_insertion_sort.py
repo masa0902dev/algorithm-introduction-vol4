@@ -1,13 +1,13 @@
 import random
 import math
-import sys; sys.path.append("."); import c;
+import sys; sys.path.append("."); import c
 
-def recursiveInsertionSort(A, r):
-    if r <= 0:
+def recursiveInsertionSort(A, right):
+    if right <= 0:
         return
-    recursiveInsertionSort(A, r-1)
-    key = A[r]
-    j = r - 1
+    recursiveInsertionSort(A, right-1)
+    key = A[right]
+    j = right - 1
     while j >= 0 and A[j] > key:
         A[j+1] = A[j]
         j -= 1
